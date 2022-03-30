@@ -12,7 +12,14 @@
  - Specific AMI that they give
  - T3.nano
 - Create Target Tracking Group with atleast 2 Instance running and maximim Instance it's 4. Scaling when Average CPU above 75
-3. Create 
+3. Create AWS WAF
+- AWS managed Rules SQLi
+- Custom rate-based rule deny if 100 request in 5 mins (default) to URi path: /login
+- Custom rule allow only IP-set 
 4. Create 2 S3 bucket
+- Enable encrypt at Rest 
+- Access logging
 5. Create VPC Prive + VPC Public with Nat Gateway
 6. Create RDS Backup plan 
+- Monthly
+- Daily 
