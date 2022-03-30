@@ -1,7 +1,9 @@
-# Spot Instance Interruption Handler
+# EventBridge + Lambda + SNS Lab
+This is the first lab that i got in my SOA-CO02 Exam. It's already have 2 lambda Funtion and the lab ask you to:
+- Using EventBridge to run the first lamda function every 15 minutes
+- Setup SNS Topic (Without Subscribe) and the Second Lambda Function it's running a new Spot Instance if one Spot Instance got terminated (You cant view the Lambda Function). And using EventBridge to trigger SNS topic
 
-## Introduction
-[Amazon EC2 Spot instances](https://aws.amazon.com/ec2/spot/) are spare EC2 capacity offered with an up to 90% discount compared to On-Demand pricing with the only consideration that they can be reclaimed with a two-minute warning if EC2 needs the capacity back. This two minutes warning is provided via the local EC2 metadata endpoint of each instance type (http://169.254.169.254/latest/meta-data/spot/instance-action) and via a an (optional) [Amazon EventBridge event](https://docs.aws.amazon.com/eventbridge/latest/userguide/create-eventbridge-rule.html), which can trigger a set of actions to gracefully handle the interruption.
+### Prepare 
 
 
 You now have an SNS topic that CloudWatch Events can send the EC2 Spot Interruption Notification to, let’s configure CloudWatch to do so. In the AWS Management Console, go to Cloudwatch -> Events -> Rules and click Create Rule.
@@ -14,6 +16,10 @@ Click Configure Details in the bottom right corner.
 
 Provide a name to your CloudWatch Events rule and click Create rule.
 
+<p align="center">
+  <img  width="460" height="300" src="Images/0.PNG">
+</p>
+
 1. Creating  
 2.
 3.
@@ -21,6 +27,7 @@ Provide a name to your CloudWatch Events rule and click Create rule.
 
 Let's navigate to AWS Identity and Access Management (IAM) to create a role for our AWS Lambda function.
 Select Role > Create Role > Select AWS service > Select Lambda As a use case and create a role with the below policy.
+
 ```
 {
     "Version": "2012-10-17",
