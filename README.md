@@ -8,9 +8,7 @@
 - Create Security Group for Target Group only allow 80 from ALB SG
 - Create Target Group
 - Creat ALB with health check /index.php
-- Create Auto Scaling Group with Lauch temaple:
- - Specific AMI that they give
- - T3.nano
+- Create Lauch temaple
 - Create Target Tracking Group with atleast 2 Instance running and maximim Instance it's 4. Scaling when Average CPU above 75
 3. Create AWS WAF
 - AWS managed Rules SQLi

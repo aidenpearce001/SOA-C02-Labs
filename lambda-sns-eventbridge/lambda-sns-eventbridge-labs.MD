@@ -11,7 +11,7 @@ Let's navigate to AWS Identity and Access Management (IAM) to create a role for 
 Select Role > Create Role > Select AWS service > Select Lambda and give Lambda EC2 Full Access
 
 <p align="center">
-  <img  width="460" height="300" src="Images/0.PNG">
+  <img src="Images/0.PNG">
 </p>
 
 Or you can create a role with the below policy.
@@ -52,7 +52,7 @@ Next we creating 2 Lambda Function.
 
 Choose Configuration -> Environment variables ->  Edit -> Add environment variable.
 <p align="center">
-  <img  width="460" height="300" src="Images/5.PNG">
+  <img src="Images/5.PNG">
 </p>
 
 Enter a key and value so the Lamba Function can work perfectly.
@@ -85,17 +85,17 @@ Enter a key and value so the Lamba Function can work perfectly.
 Goto EventBridge from AWS console and Click Create rule
 1. Name the Rule
 <p align="center">
-  <img  width="460" height="300" src="Images/6.PNG">
+  <img src="Images/6.PNG">
 </p>
 
 2. Choose A schedule that runs at a regular rate, such as every 15 minutes. and enter the rate expression.
 <p align="center">
-  <img  width="460" height="300" src="Images/7.PNG">
+  <img src="Images/7.PNG">
 </p>
 
 3. For Target types, choose AWS service. For Select a target, choose Lambda function from the drop-down list.
 <p align="center">
-  <img  width="460" height="300" src="Images/8.PNG">
+  <img src="Images/8.PNG">
 </p>
 
 4. Click Next then you done the first requirement.
@@ -110,7 +110,7 @@ Create an SNS topic and subscription (Since the Exam not ask you to crate a subs
 5.    For Name, enter the name of your topic.
 6.    Choose Create topic.
 <p align="center">
-  <img  width="460" height="300" src="Images/2.PNG">
+  <img src="Images/2.PNG">
 </p>
 
 7.    From the created topic, choose Create subscription.
@@ -119,7 +119,7 @@ Create an SNS topic and subscription (Since the Exam not ask you to crate a subs
 10.    For Endpoint, enter the email address where you want to receive SNS notifications.
 
 <p align="center">
-  <img  width="460" height="300" src="Images/3.PNG">
+  <img src="Images/3.PNG">
 </p>
 
 You now have an SNS topic that EventBridge Events can send the EC2 Spot Interruption Notification to, let’s configure EventBridge to do so. 
@@ -127,23 +127,23 @@ You now have an SNS topic that EventBridge Events can send the EC2 Spot Interrup
 Goto EventBridge from AWS console and Click Create rule
 1. Name the Rule
 <p align="center">
-  <img  width="460" height="300" src="Images/1.PNG">
+  <img src="Images/1.PNG">
 </p>
 
 2. Choose rule with an Event pattern. Under Service Name select EC2 and under Event Type select EC2 Spot Instance Interruption Warning
 
 <p align="center">
-  <img  width="460" height="300" src="Images/9.PNG">
+  <img src="Images/9.PNG">
 </p>
 
 3. In Select targets, choose SNS target so the EventBridge can publish notification
 <p align="center">
-  <img  width="460" height="300" src="Images/10.PNG">
+  <img src="Images/10.PNG">
 </p>
 
 4. Since the Exam also ask you to use the Input Tranformer. Click Additional settings
 <p align="center">
-  <img  width="460" height="300" src="Images/11.PNG">
+  <img src="Images/11.PNG">
 </p>
 
 5. Define Input path
@@ -161,7 +161,7 @@ Goto EventBridge from AWS console and Click Create rule
 
 7. Create Additional targets for Lambda. Select a target, choose Lambda function from the drop-down list.
 <p align="center">
-  <img  width="460" height="300" src="Images/14.PNG">
+  <img src="Images/14.PNG">
 </p>
 
 8. Click Next then you done the second requirement.
