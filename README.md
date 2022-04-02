@@ -5,7 +5,7 @@ cloud operations role who have at least 1 year of hands-on experience with deplo
 networking, and security on AWS.
 
 <p align="center">
-  <img src="Images/AWS-SysOpAdmin-Associate-2022.PNG">
+  <img src="https://images.credly.com/size/680x680/images/bf588058-87cc-4cbd-94b0-ef0385fb4371/AWS-SysOpAdmin-Associate-2020.png">
 </p>
 
 SOA-C02 is the first AWS exam that includes 2 sections
