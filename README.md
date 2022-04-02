@@ -1,23 +1,39 @@
-# SOA-C02-Labs
+# SOA-C02 Hands-On Labs
 
-1. Creating Eventbridge for each Lambda Funtion:
-- Creating a Schedule Eventbridge that excute Lambda Funtion every 15 minutes
-- Creatung a source event from lambda when a Spot Instance Termination and pulish to SNS Topic (SNS Topic dont have to create any notification subscribe)
-2. Create ASG + ALB
-- Create Security Group for ALB only allow 80 from Internet
-- Create Security Group for Target Group only allow 80 from ALB SG
-- Create Target Group
-- Creat ALB with health check /index.php
-- Create Lauch temaple
-- Create Target Tracking Group with atleast 2 Instance running and maximim Instance it's 4. Scaling when Average CPU above 75
-3. Create AWS WAF
-- AWS managed Rules SQLi
-- Custom rate-based rule deny if 100 request in 5 mins (default) to URi path: /login
-- Custom rule allow only IP-set 
-4. Create 2 S3 bucket
-- Enable encrypt at Rest 
-- Access logging
-5. Create VPC Prive + VPC Public with Nat Gateway
-6. Create RDS Backup plan 
-- Monthly
-- Daily 
+The AWS Certified SysOps Administrator – Associate (SOA-C02) exam is intended for system administrators in a
+cloud operations role who have at least 1 year of hands-on experience with deployment, management,
+networking, and security on AWS.
+
+<p align="center">
+  <img src="Images/AWS-SysOpAdmin-Associate-2022.PNG">
+</p>
+
+SOA-C02 is the first AWS exam that includes 2 sections
+- Objective questions
+- Hands-on labs
+
+SOA-C02 Exam is for 190 minutes with 51 objective-type questions and 3 Hands-on labs.
+
+Labs are performed in a separate instance with 135 minutes
+
+Labs are pretty easy if you have worked on AWS.
+
+NOTE: *Once you complete a section and click next you cannot go back to the section. The same is for the labs. Once a lab is completed, you cannot return back to the lab.*
+
+I create this repo as a References for anyone that never worked with AWS or have very little experience on it's
+
+The Labs was from my SOA-C02 EXAM and some others i got from posts on Reddit.
+
+List of Labs: 
+
+- [Schedule AWS Lambda functions using EventBridge ](lambda-sns-eventbridge/README.md)
+- [Setup ASG and ALB](asg-alb/README.md)
+- [Configure WAF Rules](waf/README.md)
+- [Configure 2 S3 witch default encryption and access logs](s3-encryption-accesslogs/README.md)
+- [Amazon RDS Backup & Restore using AWS Backup](rds-backups-plan/README.md)
+
+If anyone want to be contributor don't hesitate to contact me via:
+- [Linkedin](https://www.linkedin.com/in/tran-ngoc-hieu-nam-8769351a9/)
+- [Gmail](aidenpearcewd01@gmail.com)
+
+
