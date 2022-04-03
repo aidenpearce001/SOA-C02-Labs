@@ -22,8 +22,6 @@ NOTE: *Once you complete a section and click next you cannot go back to the sect
 
 I create this repo as a References for anyone that never worked with AWS or have very little experience on it's
 
-The Labs was from my SOA-C02 EXAM and some others i got from posts on Reddit.
-
 List of Labs: 
 
 - [Schedule AWS Lambda functions using EventBridge ](lambda-sns-eventbridge/README.md)
@@ -32,8 +30,5 @@ List of Labs:
 - [Configure 2 S3 witch default encryption and access logs](s3-encryption-accesslogs/README.md)
 - [Amazon RDS Backup & Restore using AWS Backup](rds-backups-plan/README.md)
 
-If anyone want to be contributor don't hesitate to contact me via:
-- [Linkedin](https://www.linkedin.com/in/tran-ngoc-hieu-nam-8769351a9/)
-- [Gmail](aidenpearcewd01@gmail.com)
 
 
