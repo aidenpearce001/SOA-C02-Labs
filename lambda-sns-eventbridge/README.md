@@ -1,5 +1,5 @@
 # EventBridge + Lambda + SNS Lab
-This is the first lab that i got in my SOA-CO02 Exam. It's already have 2 lambda Funtion and the lab ask you to:
+It's already have 2 lambda Funtion and the lab ask you to:
 - Using EventBridge to run the first lamda function every 15 minutes
 - Setup SNS Topic (Without Subscribe) and the Second Lambda Function it's running a new Spot Instance if one Spot Instance got terminated (You cant view the Lambda Function). And using EventBridge to trigger SNS topic
 

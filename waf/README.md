@@ -1,5 +1,5 @@
 # Waf Configuraion Lab
-This is the last one lab that i got in my EXAM. The lab ask you to configure some WAF rules and associated with ALB that have been created.
+The lab ask you to configure some WAF rules and associated with ALB that have been created.
 
 ### Prepare 
 *In the Exam lab the ALB already there so you dont have to create it but for simulate you have to create it's on your own*
