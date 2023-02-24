@@ -30,5 +30,9 @@ List of Labs:
 - [Configure 2 S3 witch default encryption and access logs](s3-encryption-accesslogs/README.md)
 - [Amazon RDS Backup & Restore using AWS Backup](rds-backups-plan/README.md)
 
-
-
+To-do: 
+- [ ] Create Cloudwatch custom metric to filter statuscode=500 and notify it in SNS.
+- [ ] EventBridge rule to apply aws system manager automation document for a ec2 based on a spot fleet interruption warning.
+- [ ] Creating an Amazon VPC with public and private subnets
+- [ ] Create lifecycle and enforce encryption
+- [ ] Connect Lambda to a VPC, use RDS proxy to connect to an RDS Database. Select correct execution role for the Lambda.
